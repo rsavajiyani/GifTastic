@@ -36,7 +36,7 @@ $(document).on("click", ".searchButton", function(){
 	$("#searchesDiv").empty();
 	var name = $(this).data("type");
 	console.log(name);
-	var query = "http://api.giphy.com/v1/gifs/search?q=" + name + "&api_key=dc6zaTOxFJmzC&limit=10";
+	var query = "https://api.giphy.com/v1/gifs/search?q=" + name + "&api_key=dc6zaTOxFJmzC&limit=10";
 	$.ajax({
  		url:query,
 		method:"GET"})
